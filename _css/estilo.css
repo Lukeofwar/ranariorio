@@ -1,0 +1,11 @@
+@charset "UTF-8"
+
+body {
+    
+    background-image: url("_imagens/fundoo.jpg");
+    color: rgb(0, 0, 0);
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
