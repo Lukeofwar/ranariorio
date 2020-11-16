@@ -5,7 +5,54 @@ body {
     background-image: url("_imagens/fundoo.jpg");
     color: rgb(0, 0, 0);
 }
+
+div#interface {
+    width: 1050px;
+    margin: 10px auto 10px auto;
+    background-color: ;
+}
+
 p {
     text-align: justify;
     text-indent: 50px;
+}
+/* Formatação do Menu */
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 250px;
+    
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: springgreen;
+}
+
+nav#menu h3 {
+    display: none;
+}
+
+nav#menu a {
+    color: rgb(52, 160, 119);
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: rgb(85, 192, 160);
+    text-decoration: underline;
 }
