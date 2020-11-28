@@ -82,5 +82,11 @@ nav#menu a:hover {
 }
 
 hgroup#aparencia {
-    color: rgb(90, 207, 90);
+    color: rgb(1, 121, 55);
+    text-shadow: 1px 1px 1px rgba(0,0,0,rgba(0,0,0,.6) );
+}
+
+footer#rodape p{
+
+    border-top: 1px black solid;
 }
