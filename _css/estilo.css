@@ -41,52 +41,51 @@ header#cabecalho h2 {
     margin-top: 0px;
  }
 
-/* Formatação do Menu */
+                /* Formatação do Menu */
 
-nav#menu {
-    display: block;
-}
+                nav#menu {
+                    display: block;
+                }
+                
+                nav#menu ul {
+                    list-style: none;
+                    text-transform: uppercase;
+                    position: absolute;
+                    top: -18px;
+                    left: 220px;
+                }
+                
+                nav#menu li {
+                    display: inline-block;
+                    background-color: #dddddd;
+                    padding: 10px;
+                    margin: 2px;
+                    transition: background-color 1s;
+                }
 
-nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: -18px;
-    left: 220px;
-}
+                nav#menu li:hover {
+                background-color: rgb(52, 138, 109);
+                }
 
-nav#menu li {
-    display: inline-block;
-    background-color: #dddddd;
-    padding: 10px;
-    margin: 2px;
-    transition: background-color 1s;
-}
+                nav#menu h3 {
+                 display: none;
+                 }
 
-nav#menu li:hover {
-    background-color: rgb(52, 138, 109);
-}
+                nav#menu a {
+                color: rgb(158, 158, 158);
+                 text-decoration: none;
+                }
 
-nav#menu h3 {
-    display: none;
-}
+                 nav#menu a:hover {
+                 color: #0fa50f;
+                 text-decoration: underline;
+                }
 
-nav#menu a {
-    color: rgb(158, 158, 158);
-    text-decoration: none;
-}
+                 hgroup#aparencia {
+                color: rgb(1, 121, 55);
+                text-shadow: 1px 1px 1px rgba(0,0,0,rgba(0,0,0,.6) );
+                }
 
-nav#menu a:hover {
-    color: #0fa50f;
-    text-decoration: underline;
-}
-
-hgroup#aparencia {
-    color: rgb(1, 121, 55);
-    text-shadow: 1px 1px 1px rgba(0,0,0,rgba(0,0,0,.6) );
-}
-
-footer#rodape p{
-
-    border-top: 1px black solid;
-}
+                footer#rodape {
+                border-top: 1px black solid;
+                }
