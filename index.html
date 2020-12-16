@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="_css/estilo.css"/>
     
 </head>
+<script lang="javascript" src="_javascript/foncoes.js"></script>
 <body>
 
     <hgroup id="aparencia">
@@ -23,19 +24,22 @@
     <center> <h2>Ranário</h2></center>
     </hgroup>
     <br><br>
-        <center> <img src="_imagens/foto-desenho.jpg"/ width="200px"> </center>
-
+        <center> <img id="icone" src="_imagens/home.png"/ width="200px"> </center>
+        <br><br>
+            <center> <img src="_imagens/foto-desenho.jpg" width="200px"></center>
     <nav id="menu">
  <h3>Menu Principal</h3>
         <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="galeria de fotos.html">Galeria de Fotos</a></li>
-    <li><a href="localização.html">Localização</a></li> 
-    <li><a href="contato.html">Contato</a></li>
-    <li><a href="beneficios da carne de rã.html">Benefícios da Carne de Rã</a></li>
+    <li onmouseover= "mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/home.png')"><a href="index.html">Home</a></li>
+    <li onmouseover= "mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/home.png')"><a href="galeria de fotos.html">Galeria de Fotos</a></li>
+    <li onmouseover= "mudaFoto('_imagens/icone-endereco.png')" onmouseout="mudaFoto('_imagens/home.png')"><a href="localização.html">Localização</a></li> 
+    <li onmouseover= "mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/home.png')"><a href="contato.html">Contato</a></li>
+    <li onmouseover= "mudaFoto ('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/home.png')"><a href="beneficios da carne de rã.html">Benefícios da Carne de Rã</a></li>
          </ul> 
         </nav>
     </header>
+
+
     <br><br>
 
   <center> <h3>Quem Somos Nós</h3></center>
@@ -56,12 +60,13 @@ fgdshfjehwfjrhbfhregbhje rhgthergt regthgrhjtgrjetgre trejgtregtjer.</p>
 gehwhrhjewgrhjewgrhj ewhjgrewhrghewj rhewgrjhgwegrhjwegr ehwgrjhwegrhwe
 ffghgfgf fhhffgfghfghfgfghfhgfhf gfghfghfgfgfghfgfff fgfgfhffhfhgfh.</p>
 
-<hr size="7">
-<footeri id="rodape">
+
+<footer id="rodape">
     <br/>
-  <center> Localização: São João de Meriti Venda Velha Pq Barreto-
+  <center> Localização: São João de Meriti Venda Velha Pq Barreto --
   contato: 27561994.</center>
 </footer>
 </div>    
 </body>
 </html>
+
