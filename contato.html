@@ -4,25 +4,27 @@
     <meta charset="UTF-8"/>
     <title>Ranário Rã Gorda</title>
     <link rel="stylesheet" href="_css/estilo.css"/>
-    
-</head>
+    <link rel="stylesheet" href="_css/form.css"/>
+
+          </head>
 <script lang="javascript" src="_javascript/foncoes.js"></script>
 <body>
 
     <hgroup id="aparencia">
         <br/><br/>
-<h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; De Dia E De Noite</h3>
-<h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; O Melhor Atendimento</h3>
-<h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A Qualquer Hora Do Dia</h3>
-</hgroup>
-<div id="interface">
+          <h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; De Dia E De Noite</h3>
+          <h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; O Melhor Atendimento</h3>
+          <h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A Qualquer Hora Do Dia</h3>
+     </hgroup>
+    <div id="interface">
 
-    <header id="cabecalho">
-    <hgroup>
-        <br><br><br>
-    <center> <h1>Ranário Rã Gorda</h1></center>
-    <center> <h2>Ranário</h2></center>
-    </hgroup>
+               <header id="cabecalho">
+               <hgroup>
+                         <br><br><br>
+                    <center> <h1>Ranário Rã Gorda</h1></center>
+                 <center> <h2>Ranário</h2></center>
+                </hgroup>
+    
     <br><br>
         <center> <img id="icone" src="_imagens/home.png"/ width="200px"> </center>
         <br><br>
@@ -36,6 +38,87 @@
     <li onmouseover= "mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="contato.html">Contato</a></li>
     <li onmouseover= "mudaFoto ('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="beneficios da carne de rã.html">Benefícios da Carne de Rã</a></li>
          </ul> 
+         <br><br>
+        <form method="post" id="fContato" action="mailto:matheuslucaskid@gmail.com">
+            
+            <fieldset id="usuario"><legend> Identificação do Usuário</legend>
+          <p>Nome:<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p> 
+          <p>Senha: <input type="password"name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="10 dígitos"/></p>
+            <p>E-mail:<input type="email"name="tMail" id="cMail" size="30" maxlength="30" placeholder="Seu E-mail"/></p>
+            <fieldset id="sexo"><legend> Sexo:</legend>
+              <input type="radio" name="tSexo" id="cSexo" checked/>  Masculino <br>
+              <input type="radio" name="tSexo" id="cSexo"/>  Feminino</fieldset>
+
+          <p> Data de Nascimento:<input type="date" name="tNasc" id="cNasc"/> </p>
+          </fieldset> 
+          <br>
+        <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+            <p> Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..."/></p>
+            <p> Número:<input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+            <p><label for="cEst"> Estado:</label>
+            <select name="tEst" id="cEst">
+
+                <optgroup label="Sudeste">
+                <option>Rio de Janeiro</option>
+                <option>São Paulo</option>
+                <option value="DF">Distrito Federal</option>
+                  </optgroup>
+
+                <optgroup label="Norte">
+                             <option value="AM">Amazonas</option>
+                             <option value="RR">Roraima</option>
+                             <option value="AP">Amapá</option>
+                             <option value="PA">Pará</option>
+                             <option value="TO">Tocantins</option>
+                             <option value="RO">Rondônia</option>
+                             <option value="AC">Acre</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                             <option value="MA">Maranhão</option>
+                             <option value="PI">Piauí</option>
+                             <option value="CE">Ceará</option>
+                             <option value="RN">Rio Grande do Norte</option>
+                             <option value="PE">Pernambuco</option>
+                             <option value="PB">Paraíba</option>
+                             <option value="SE">Sergipe</option>
+                             <option value="AL">Alagoas</option>
+                             <option value="BA">Bahia</option>
+                </optgroup>
+
+                <optgroup label="Centro-Oeste">
+                             <option value="GO">Goiás</option>
+                             <option value="MS">Mato Grosso do Sul</option>
+                             <option value="MT">Mato Grosso</option>
+                </optgroup>
+                
+                <optgroup label="Sul">
+                             <option value="PR">Paraná</option>
+                             <option value="RS">Rio Grande do Sul</option>
+                             <option value="SC">Santa Catarina</option>
+                </optgroup>  
+                
+            </select></p>
+
+                <p><label for="cCid"> Cidade: </label>
+                <input type="text" name="tcid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/> </p>
+                <datalist id="cidades">
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Nova Iguaçu"></option>
+                    <option value="Niterói"></option>
+                    <option value="Belford Roxo"></option>
+                </datalist>
+                </fieldset> 
+                <br>
+            <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+            <p><label for="cUrg"> Grau de Urgência:</label>
+           Mín <input type="range" name="tUrg" id="cUrg" min="0" max="10"/>Máx</p>
+            <p><label for="cMsg"> Mensagem:</label>
+            <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+            </fieldset>
+<br>
+           <center> <input type="submit" value="Enviar"/>   </center>
+            </form>
         </nav>
     </header>
     <br><br>
