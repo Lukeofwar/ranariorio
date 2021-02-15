@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+
+p {
+    text-align: justify;
+    text-indent: 23px;
+  }
+
 body {
     background: url("../_imagens/thumb-1920-452383\ \(1\).jpg");
     color: rgb(16, 94, 55);
@@ -11,12 +17,6 @@ div#interface {
     margin: -190px auto -0 auto;
     box-shadow: 0px 0px 10px black;
     padding: 10px;
-}
-
-p {
-  text-align: justify;
-  text-indent: 50px;
-
 }
 
 header#cabecalho img#icone {
