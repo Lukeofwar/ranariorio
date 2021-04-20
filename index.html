@@ -6,9 +6,17 @@
     <link rel="stylesheet" href="_css/estilo.css"/>
     
 </head>
-<script lang="javascript" src="_javascript/foncoes.js"></script>
+<script>
+    function mudaFoto (foto) {
+       document.getElementById("icone").src = foto;
+    }
+</script>
 <body>
 
+    <div id="slide">
+          <img src="/_imagens/img-10.webp" alt="imagens" id="tipos a tipos">
+    </div>
+    <script src="/js/funcoes.js"></script>
     <hgroup id="aparencia">
         <br/><br/>
 <h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A Melhor Rã Do Brasil</h3>
@@ -24,14 +32,15 @@
     <center> <h2>Ranário</h2></center>
     </hgroup>
     <br><br>
-        <center> <img id="icone" src="_imagens/home.png"/ width="200px"> </center>
+    <center> <img id="icone" src="_imagens/home.png" width="200px"> </center>
+
         <br><br>
-            <center> <img src="_imagens/foto-desenho.jpg" width="200px"></center>
-    <nav id="menu">
+<center><img src="_imagens/foto-desenho.jpg" width="200px"></center>
+        <nav id="menu">
  <h3>Menu Principal</h3>
         <ul>
     <li onmouseover= "mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/home.png')"><a href="index.html">Home</a></li>
-    <li onmouseover= "mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/home.png')"><a href="galeria de fotos.html">Galeria de Fotos</a></li>
+    <li onmouseover= "mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/home.png')"><a href="galeria de fotos.html ">Galeria de Fotos</a></li>
     <li onmouseover= "mudaFoto('_imagens/icone-endereco.png')" onmouseout="mudaFoto('_imagens/home.png')"><a href="localização.html">Localização</a></li> 
     <li onmouseover= "mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/home.png')"><a href="contato.html">Contato</a></li>
     <li onmouseover= "mudaFoto ('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/home.png')"><a href="beneficios da carne de rã.html">Benefícios da Carne de Rã</a></li>
@@ -61,12 +70,14 @@ gsfdgsgfgfsdgdsfgsdfgdfsgfgdfgdfsgdfghbgfhhjgshfsjghjshhgshggfhgfhgh
 gafgsdgdfgadgfahfghgfdisaufrgvasdufuigfudshafuhureihfguhguhfdgfdggf</p>
 
 
+
 <footer id="rodape">
     <br/>
   <center> Localização: **************
   contato: 27561994.</center>
-</footer>   
-</div>    
+</footer>  
+</div>  
+ 
 </body> 
 </html>
 

@@ -28,3 +28,8 @@ CONTATO.HTML .
 
 
 background-color: #36534c;
+
+
+
+    <script lang="javascript" src="/js/funcoes.js"></script>
+
