@@ -11,7 +11,9 @@
        document.getElementById("icone").src = foto;
     }
 </script>
-<body>
+<body onload="slide1()">
+    <script src="js/funcoes.js"></script>
+
     <hgroup id="aparencia">
     
 <h3> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; O Ranário Mais Perto De Você</h3>
@@ -29,12 +31,14 @@
     <br><br>
         <center> <img id="icone" src="_imagens/home.png" width="200px"> </center>
         <br><br>
-            <center> <img src="_imagens/foto-desenho.jpg" width="200px"></center>
-    <nav id="menu">
+        <div id="main">
+            <img src="_imagens/img-11.jpg" alt="slide show" id="slide">
+      </div>    
+      <nav id="menu">
  <h3>Menu Principal</h3>
         <ul>
     <li onmouseover= "mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/icone-endereco.png')"><a href="index.html">Home</a></li>
-    <li onmouseover= "mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/icone-endereco.png')"><a href="galeria de fotos.html">Galeria de Fotos</a></li>
+    <li onmouseover= "mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/icone-endereco.png')"><a href="gallery.html">Galeria de Fotos</a></li>
     <li onmouseover= "mudaFoto('_imagens/icone-endereco.png')" onmouseout="mudaFoto('_imagens/icone-endereco.png')"><a href="localização.html">Localização</a></li> 
     <li onmouseover= "mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/icone-endereco.png')"><a href="contato.html">Contato</a></li>
     <li onmouseover= "mudaFoto ('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/icone-endereco.png')"><a href="beneficios da carne de rã.html">Benefícios da Carne de Rã</a></li>
