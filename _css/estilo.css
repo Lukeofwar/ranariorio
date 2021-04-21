@@ -18,7 +18,8 @@ p {
   }
 
 body {
-    background: url("../_imagens/thumb-1920-452383\ \(1\).jpg");
+    background: url("../_imagens/lago.jpg") ;
+    background-size: cover;
     color: rgb(21, 36, 28);
     font-family: 'Benne', serif;
 }
